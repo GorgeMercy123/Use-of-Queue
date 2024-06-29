@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a queue of integers
+        Queue<int> myQueue = new Queue<int>();
+
+        // Enqueue elements into the queue
+        myQueue.Enqueue(10);
+        myQueue.Enqueue(20);
+        myQueue.Enqueue(30);
+
+        // Dequeue elements from the queue
+        Console.WriteLine("Dequeued elements:");
+        while (myQueue.Count > 0)
+        {
+            int dequeuedElement = myQueue.Dequeue();
+            Console.WriteLine(dequeuedElement);
+        }
+
+        // Check if the queue is empty
+        if (myQueue.Count == 0)
+        {
+            Console.WriteLine("Queue is empty");
+        }
+    }
+}
